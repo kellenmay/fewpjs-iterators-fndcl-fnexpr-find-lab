@@ -1,5 +1,6 @@
-
-superbowlWin = (record) => {
-    let result = record.find( record => record.result === "W" )
-    return !!result ? result.year : undefined
-  }
+function superbowlWin(arr) {
+  let result = arr.find( function(record) {
+     return record.result === "W" 
+  })
+  return !!result ? result.year : undefined
+}
